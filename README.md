@@ -12,6 +12,10 @@ The [Open Web Application Security Project® (OWASP)](https://owasp.org/), is a 
 ZAP is an open source web app scanner, maintained by security specialists around the World. It has [tons of functionalities](https://www.zaproxy.org/docs/), but here I am going to show you just its [API scanner](https://www.zaproxy.org/docs/docker/api-scan/).
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
+
+
+
+## How to run
 ## Installation for development with Docker
 Clone/git pull the repo into any local directory:
 ```
@@ -22,7 +26,11 @@ Open the terminal in this directory and run:
 ```
 $ docker-compose up -d --build
 ```
+
+
 **Note**: as in this version a file transfer is used in order to let containers to communicate to each other, it’s necessary to grant some privileges for writing in the shared volume:
+
+
 ```
 $ chmod 777 -R zap-pool
 ```
@@ -42,6 +50,9 @@ If you suppress the namespace, the current one is used.
 This project uses  three capabilities of ZAP to provide reports: plain text, HTML and Markdown.
 
 The plain text just shows which tests passed and which failed, as well a summary at the end. A code for details about the OWASP vulnerability is also presented for each test.
+
+
+
 ```
 -------------------------------------------
 ZAP API Scan for: /crud
