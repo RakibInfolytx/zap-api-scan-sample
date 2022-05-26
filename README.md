@@ -15,7 +15,7 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 ## Installation for development with Docker
 Clone/git pull the repo into any local directory:
 ```
-$ git clone https://github.com/jrpereirajr/zap-api-scan-sample.git
+$ git clone https://github.com/RakibInfolytx/API_SCAN_USING_ZAP.git
 $ cd zap-api-scan-sample
 ```
 Open the terminal in this directory and run:
